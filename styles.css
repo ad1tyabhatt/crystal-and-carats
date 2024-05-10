@@ -1,0 +1,67 @@
+:root {
+  /* Background color */
+
+  --primary: #fed7ba;
+  --bg-brown: #8b0000;
+  --bg-dark-brown:#84292B;
+  --bg-grey:#D9D9D9;
+  --bg-pink:#D27F7F80;
+
+
+
+  /* font family */
+
+
+--ff-nutino:Nunito Sans;
+--ff-poppins:Poppins;
+
+  /* font size */
+    
+
+  --fs-16:16px;
+  --fs-24:24px;
+  --fs-32:32px;
+  --fs-36:36px;
+  --fs-40:40px;
+  --fs-48:48px;
+  --fs-60:60px;
+  --fs-64:64px;
+  --fs-96:94px
+
+
+}
+
+
+.shadow-img-brown{
+  box-shadow: 5px 5px 1px 3px var(--bg-brown);
+}
+
+.shadow-img-skin{
+  box-shadow: 5px 5px 1px 3px var(--bg-pink);
+}
+
+.parent-best-seller img{
+  box-shadow: 5px 5px 1px 3px var(--bg-brown);
+  margin-bottom:15px ;
+}
+
+/* .relative-gray{
+  position: relative;
+}
+
+
+.gray-bg{
+  height: 50vh;
+  width: 100%;
+  background-color: var(--bg-grey);
+  position: absolute;
+} */
+
+.gift-card{
+  height: 60vh;
+  background: url('./assets/img/Home/gift-card.jfif');
+  background-size:contain ;
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
