@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  /* Background color */
+
+  --primary: #ebe9e1;
+  --secondary: #ff3300;
+  --tertiary: #fdae6d;
+  --quat: #d6236d;
+  --pent: #dd99eb;
+
+  --bg-brown: #8b0000;
+  --bg-dark-brown: #84292b;
+  --bg-grey: #d9d9d9;
+  --bg-pink: #d27f7f80;
+  --bg-darkpink: #d27f7f;
+  --bg-lightpink: #e0c4c4;
+  --bg-grey_light: #ffffff;
+
+  --background-image: radial-gradient(
+    circle,
+    #e59ebc,
+    #f29aad,
+    #fb989b,
+    #fe9986,
+    #fb9d70
+  );
+
+  /* font family */
+
+  --ff-nutino: Nunito Sans;
+  --ff-poppins: Poppins;
+
+  /* font size */
+
+  --fs-16: 16px;
+  --fs-24: 24px;
+  --fs-32: 32px;
+  --fs-36: 36px;
+  --fs-40: 40px;
+  --fs-48: 48px;
+  --fs-60: 60px;
+  --fs-64: 64px;
+  --fs-96: 94px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+}
+.image-gallery-container {
+  display: grid;
+  padding: 2rem 0;
+  grid-template-columns: 1fr ;
+  max-height: 800px;
+  max-width: 600px;
+  grid-template-rows: 150px 150px 150px 300px;
+  grid-auto-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0 auto;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* grid-auto-flow: row; */
+  grid-template-areas:
+    "birthday personalised"
+    "anniversary personalised"
+    "baby-birth personalised"
+    "customised customised";
+}
+
+
+
+.birthday {
+    grid-area: birthday;
+    background: url('../assets/img/occassion/birthday.jfif');
+}
+
+.anniversary {
+  grid-area: anniversary;
+  background: url('../assets/img/occassion/anniversary.jfif');
+}
+
+.baby-birth {
+  grid-area: baby-birth;
+  background: url('../assets/img/occassion/baby-birth.jfif');
+}
+
+.personalised {
+  grid-area: personalised;
+  background: url('../assets/img/occassion/personalised.jfif');
+}
+
+
+.img-child{
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.customised {
+    grid-area: customised;
+    background: url('../assets/img/occassion/customized.jfif');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
