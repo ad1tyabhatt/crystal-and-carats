@@ -178,8 +178,9 @@ width: 100%;
 .btn-signup:hover,
 .btn-signup:focus-visible{
   --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: .05em;
+  /* outline-color: var(--color); */
+  /* outline-offset: .05em; */
+  text-decoration: none;
 }
 
 .btn-signup:active {
