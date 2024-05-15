@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   /* Background color */
-
   --primary: #ebe9e1;
   --secondary: #ff3300;
   --tertiary: #fdae6d;
@@ -16,6 +15,8 @@
   --bg-darkpink: #d27f7f;
   --bg-lightpink: #e0c4c4;
   --bg-grey_light: #ffffff;
+
+  --background-image: radial-gradient(circle, #e59ebc, #f29aad, #fb989b, #fe9986, #fb9d70);
 
   /* font family */
 
@@ -63,7 +64,8 @@ section {
   flex-direction: column;
   /* justify-content: center; */
   /* align-items: center; */
-  background-color: var(--tertiary);
+  /* background-color: var(--tertiary); */
+  background-image: var(--background-image);
   padding: 2rem;
   width: 20%;
   gap: 1rem;
