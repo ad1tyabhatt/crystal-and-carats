@@ -42,7 +42,8 @@ module.exports = {
         fs_96: "94px",
       },
       backgroundImage:{
-        'giftCard':"url('./assets/img/home/gitt-card.jfif')"
+        'giftCard':"url('./assets/img/home/gitt-card.jfif')",
+        'logo':"url('./assets/img/home/logo.png')"
       }
     },
   },

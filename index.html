@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,32 +29,121 @@
       class="flex bg-primary justify-between px-10 h-[100px] items-center mb-2"
     >
       <nav class="text-fs_24 font-fw_bold space-x-8">
-        <a class="" href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Blog</a>
+        <a class="grey" href="#">Home</a>
+        <a class="grey" href="./Components/shop.html">Shop</a>
+        <a class="grey" href="#">Blog</a>
       </nav>
       <div class="logo">
         <img src="./assets/img/Home/logo.png" class="h-12" alt="" />
       </div>
       <nav class="text-fs_24 font-fw_bold space-x-8 justify-between">
-        <a href=""><i class="fa-solid fa-heart"></i></a>
-        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-        <a class=""><i class="fa-solid fa-user"></i></a>
+        <a href=""><i class="grey fa-solid fa-heart"></i></a>
+        <a href=""><i class="grey fa-solid fa-cart-shopping"></i></a>
+        <a class=""><i class="grey fa-solid fa-user"></i></a>
       </nav>
     </header>
-    <div
-      class="img-container-1 grid gap-2 grid-rows-2 grid-cols-4 justify-center h-[600px] p-2"
-    >
-      <div
-        class="row-start-1 bg-cover overflow-hidden col-start-1 row-end-3 col-end-3"
-      >
-        <img class="" src="./assets/img/Home/h3.jfif" alt="" />
+
+
+    <!-- !!!!!!!!!!!!!!!!!!!!SignUp!!!!!!!!!!!!!! -->
+
+
+
+    <div class="signUp nutino">
+      <div class="signup-left"></div>
+      <div class="signup-right">
+        <div class="nav-container">
+          <ul>
+            <li><a class="btn-signup">Sign Up</a></li>
+            <li><a href="" class="btn-login">Login</a></li>
+          </ul>
+          <i class="fa-solid fa-square-xmark fa-l close-btn"></i>
+        </div>
+        <p>Sign up & get Rs. 500 off* coupon code for your first purchase!</p>
+        <form>
+          <input type="text" name="name" id="" placeholder="Name" />
+          <div class="">
+            <input type="email" name="email" id="" placeholder="Email ID" />
+          </div>
+          <input
+            type="number"
+            name="Phone Number"
+            id=""
+            placeholder="Phone Number"
+          />
+          <input type="password" name="Password" id="" placeholder="Password" />
+          <input type="checkbox" name="terms" id="terms" /><span
+            >I agree to the Terms of use and Privacy Statement</span
+          >
+          <button class="btn-signup" role="button">Sign Up</button>
+          <p>
+            Already have an account? <a class="login-now" href="">Login now</a>
+          </p>
+        </form>
       </div>
-      <div class="col-start-3 col-end-5 row-start-1 row-end-2">
-        <img class="h-full w-full" src="./assets/img/Home/h2.jfif" alt="" />
+    </div>
+
+
+    
+    <div class="slide-container-div">
+      <div class="slide-container-left">
+        <div class="container-main-slide">
+          <div class="slide-container">
+            <div class="slides">
+              <img
+                src="./assets/img/Home/h1.jfif"
+                alt=""
+                class="active slide-image"
+              />
+              <img src="./assets/img/Home/h2.jfif" class="slide-image" alt="" />
+              <img src="./assets/img/Home/h3.jfif" class="slide-image" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-start-3 col-end-5 row-start-2 row-end-3">
-        <img class="h-full w-full" src="./assets/img/Home/h1.jfif" alt="" />
+      <div class="slide-container-right">
+        <div class="right-top">
+          <div class="container-main-slide">
+            <div class="slide-container">
+              <div class="slides">
+                <img
+                  src="./assets/img/Home/h1.jfif"
+                  alt=""
+                  class="active slide-image"
+                />
+                <img src="./assets/img/Home/h2.jfif" class="slide-image" alt="" />
+                <img src="./assets/img/Home/h3.jfif" class="slide-image" alt="" />
+              </div>
+
+      
+              <div class="dotsContainer">
+                <div class="dot active" attr="0"></div>
+                <div class="dot" attr="1"></div>
+                <div class="dot" attr="2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <div class="container-main-slide">
+            <div class="slide-container">
+              <div class="slides">
+                <img
+                  src="./assets/img/Home/h1.jfif"
+                  alt=""
+                  class="active slide-image"
+                />
+                <img src="./assets/img/Home/h2.jfif" class="slide-image" alt="" />
+                <img src="./assets/img/Home/h3.jfif" class="slide-image" alt="" />
+              </div>
+      
+              <div class="dotsContainer">
+                <div class="dot active" attr="0"></div>
+                <div class="dot" attr="1"></div>
+                <div class="dot" attr="2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="browser-category text-center py-10">
@@ -59,27 +152,27 @@
         Discover elegance at your fingertips
       </p>
       <div
-        class="category-container flex flex-row gap-4 py-5 bg-white justify-center items-center"
+        class="category-container flex flex-row gap-x-20 py-5 bg-white justify-center items-center"
       >
         <div class="crystals-container text-center">
           <h3 class="text-fs_24 text-center">Crystals</h3>
           <div
-            class="crystals py-5 flex flex-row justify-center items-center gap-4"
+            class="crystals  flex flex-row justify-center items-center gap-5 pt-5"
           >
             <div
-              class="crystal w-[250px] h-[250px] object-cover shadow-img-skin"
+              class="crystal w-[150px] h-[150px] shadow-img-skin"
             >
               <img
-                class="w-full h-full"
+                class="h-full w-full object-cover object-center"
                 src="./assets/img/Home/crystal-1.jfif"
                 alt=""
               />
             </div>
             <div
-              class="crystal w-[250px] h-[250px] shadow-img-brown object-cover"
+              class="crystal w-[150px] h-[150px] shadow-img-brown"
             >
               <img
-                class="w-full h-full"
+                class="h-full w-full object-cover object-center"
                 src="./assets/img/Home/crystal-2.jfif"
                 alt=""
               />
@@ -88,17 +181,17 @@
         </div>
         <div class="carats-container">
           <h3 class="text-fs_24">Carats</h3>
-          <div class="carats py-5 flex flex-row gap-4">
-            <div class="carat w-[250px] h-[250px] object shadow-img-skin">
+          <div class="carats flex flex-row gap-10 pt-5">
+            <div class="carat w-[150px] h-[150px] object shadow-img-skin">
               <img
-                class="w-full h-full"
+                class="h-full w-full object-cover object-center"
                 src="./assets/img/Home/carat-1.jfif"
                 alt=""
               />
             </div>
-            <div class="carat w-[250px] h-[250px] shadow-img-brown">
+            <div class="carat w-[150px] h-[150px] shadow-img-brown">
               <img
-                class="w-full h-full"
+                class="h-full w-full object-cover object-center"
                 src="./assets/img/Home/carat-2.jfif"
                 alt=""
               />
@@ -123,35 +216,35 @@
             src="./assets/img/Home/b1.jfif"
             alt=""
           />
-          <p>coins</p>
+          <p><a href="./Components/bestseller.html">coins</a></p>
         </div>
         <div class="child-best-seller">
           <img src="./assets/img/Home/b2.jfif" alt="" />
-          <p>Ear Rings</p>
+          <p><a href="./Components/bestseller-page-3.html">Ear Rings</a></p>
         </div>
         <div class="child-best-seller">
           <img src="./assets/img/Home/b3.jfif" alt="" />
-          <p>Bracelets</p>
+          <p><a href="./Components/bestseller-page-2.html">Bracelets</a></p>
         </div>
         <div class="child-best-seller">
           <img src="./assets/img/Home/b4.png" alt="" />
-          <p>Bangles</p>
+          <p><a href="./Components/bestseller-page-2.html">Bangles</a></p>
         </div>
         <div class="child-best-seller">
           <img src="./assets/img/Home/b5.png" alt="" />
-          <p>Necklace</p>
+          <p><a href="./Components/bestseller-page-2.html">Necklace</a></p>
         </div>
         <div class="child-best-seller">
           <img src="./assets/img/Home/b-6.png" alt="" />
-          <p>Nose Pins</p>
+          <p><a href="./Components/bestseller-page-4.html">Nose Pins</a></p>
         </div>
         <div class="child-best-seller">
           <img src="./assets/img/Home/b7.png" alt="" />
-          <p>Rings</p>
+          <p><a href="./Components/bestseller-page-3.html">Rings</a></p>
         </div>
         <div class="child-best-seller">
           <img src="./assets/img/Home/b8.jfif" alt="" />
-          <p>Pendant</p>
+          <p><a href="./Components/bestseller-page-3.html">Pendant</a></p>
         </div>
       </div>
     </div>
@@ -234,37 +327,24 @@
         </div>
       </div>
     </div>
-    <div class="video-container">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video src="./assets/img/Home/v1.r.mp4" autoplay loop muted></video>
-            <div class="carousel-cation">
-              <div class="row">
-                <div class="row-items">
-                  <ion-icon name="add-sharp"></ion-icon>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a
-          href="#myCarousel"
-          class="carousel-control-prev"
-          role="button"
-          data-slide="prev"
-        >
-          <ion-icon name="arrow-back-sharp"></ion-icon>
-        </a>
-        <a
-          href="#myCarousel"
-          class="carousel-control-next"
-          role="button"
-          data-slide="next"
-        >
-          <ion-icon name="arrow-forward-sharp"></ion-icon>
-        </a>
-      </div>
+    <div class="container">
+      <video
+        src="./assets/img/Home/v1.r.mp4"
+        class="slider"
+        autoplay
+        loop
+        muted
+        controls
+      ></video>
+
+      <ul>
+        <li onclick="videoslider('./assets/img/Home/v1.r.mp4')">
+          <video src="./assets/img/Home/v1.r.mp4"></video>
+        </li>
+        <li onclick="videoslider('./assets/img/Home/v2.mp4')">
+          <video src="./assets/img/Home/v2.mp4"></video>
+        </li>
+      </ul>
     </div>
     <div class="recommendation">
       <h2 class="text-dark_brown text-fs_48 text-center">
@@ -313,9 +393,7 @@
             Industry Estate, Andheri East,Mumbai -400093
           </p>
         </div>
-        <div class="child-2">
-          
-        </div>
+        <div class="child-2"></div>
       </div>
       <div class="child address">
         <h3>Help & Info</h3>
@@ -330,10 +408,7 @@
         <h3>Contact Us</h3>
         <ul class="contact-us">
           <li><i class="fa-solid fa-phone"></i>1809-908-5647</li>
-          <li>
-            <i class="fa-solid fa-envelope"></i
-            >Get in Touch</i>
-          </li>
+          <li><i class="fa-solid fa-envelope"></i>Get in Touch</li>
           <li><i class="fa-brands fa-rocketchat"></i>Chat With Us</li>
         </ul>
       </div>
@@ -353,11 +428,40 @@
       </div>
     </div>
     <div class="socials">
-     <span class="brown"> Follow Us on : </span><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-whatsapp"></i><i class="fa-brands fa-twitter"></i>
+      <span class="brown"> Follow Us on : </span
+      ><i class="fa-brands fa-facebook"></i
+      ><i class="fa-brands fa-instagram"></i
+      ><i class="fa-brands fa-whatsapp"></i><i class="fa-brands fa-twitter"></i>
     </div>
-    <footer class="brown">
-      @2023 Crystals & Carats. All Rights Reserved.
-    </footer>
+    <footer class="brown">@2023 Crystals & Carats. All Rights Reserved.</footer>
+
+    
+    <!-- <div class="container-main-slide">
+      <div class="slide-container">
+        <div class="slides">
+          <img
+            src="./assets/img/Home/h1.jfif"
+            alt=""
+            class="active slide-image"
+          />
+          <img src="./assets/img/Home/h2.jfif" class="slide-image" alt="" />
+          <img src="./assets/img/Home/h3.jfif" class="slide-image" alt="" />
+        </div>
+
+        <div class="buttons">
+          <span class="next">&#10095;</span>
+          <span class="prev">&#10094;</span>
+        </div>
+
+        <div class="dotsContainer">
+          <div class="dot active" attr="0" onclick="switchImage(this)"></div>
+          <div class="dot" attr="1" onclick="switchImage(this)"></div>
+          <div class="dot" attr="2" onclick="switchImage(this)"></div>
+          <div class="dot" attr="3" onclick="switchImage(this)"></div>
+          <div class="dot" attr="4" onclick="switchImage(this)"></div>
+        </div>
+      </div>
+    </div> -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

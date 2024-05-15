@@ -8,6 +8,8 @@
   --bg-dark-brown: #84292b;
   --bg-grey: #d9d9d9;
   --bg-pink: #d27f7f80;
+  --bg-darkpink:#D27F7F;
+  --bg-lightpink:#E0C4C4;
 
   /* font family */
 
@@ -27,6 +29,13 @@
   --fs-96: 94px;
 }
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .border {
   border: 1px solid black;
 }
@@ -39,9 +48,291 @@
   box-shadow: 5px 5px 1px 3px var(--bg-pink);
 }
 
+.signUp{
+  width: 60vw;
+  z-index: 999999;
+  /* position: absolute; */
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: auto;
+  /* display: flex; */
+  flex-direction: row;
+  /* border: 1px solid red; */
+  margin:s 0 auto;
+  display: none;
+  background-color: var(--bg-lightpink);
+}
+
+
+.signUp a:hover{
+  text-decoration: underline;
+}
+.nutino{
+  font-family: var(--ff-nutino);
+}
+.signup-left{
+  width: 40%;
+  background: url('./assets/img/Home/signup-bg.jfif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signup-right{
+  width: 60%;
+  position: relative;
+  text-align: center;
+}
+
+.signup-right>*{
+  margin-bottom: 20px;
+}
+.nav-container{
+  border-bottom: 1px solid white;
+}
+.nav-container ul {
+  display: flex;
+  justify-content: space-around
+}
+.nav-container ul li{
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--bg-darkpink);
+}
+
+.close-btn{
+  position: absolute;
+  right:0;
+  top: 0;
+}
+.signup-right{
+  padding: 1rem 2rem;
+}
+
+
+.signup-right>p{
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-style: italic;
+  font-size: 24px;
+}
+
+form input{
+  width: 100%;
+  margin-bottom: 10px;
+  background: none;
+  border-bottom: 2px solid white;
+}
+
+form input::placeholder{
+  color: var(--bg-darkpink);
+  padding-left: 10px;
+}
+
+form input:hover{
+  background-color: var(--bg-darkpink);
+  ::placeholder{
+    color: white;
+  }
+  border: none;
+  
+}
+
+.login-now{
+  color: var(--bg-brown);
+  text-decoration: underline;
+}
+
+
+.check{
+  text-align: start;
+}
+
+/* CSS */
+.btn-signup {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: white;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--bg-darkpink) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+width: 100%;
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-signup:hover,
+.btn-signup:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.btn-signup:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.grey:hover{
+  color: rgb(255, 0, 0);
+  transition: 0.2s;
+  transform: scale(1.5);
+}
+
 .parent-best-seller img {
   box-shadow: 5px 5px 1px 3px var(--bg-brown);
   margin-bottom: 15px;
+}
+
+.slide-container-div{
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 2rem;
+}
+.slide-container-left{
+  width: 50%;
+  display: flex;
+}
+.slide-container-right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right-top,.right-bottom{
+  height: 50%;
+  display: flex;
+}
+
+
+
+.container-main-slide{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide-container .slides{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slide-container .slides img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.slide-container .slides img:not(.active){
+  top: 0;
+  left: -100%;
+}
+span.next, span.prev{
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 14px;
+  color: #eee;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.5s;
+  border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
+  z-index: 1;
+}
+span.next{
+  right: 20px;
+}
+span.prev{
+  left: 20px;
+}
+span.next:hover, span.prev:hover{
+  background-color: #ede6d6;
+  opacity: 0.8;
+  color: #222;
+} 
+.dotsContainer{
+  position: absolute;
+  bottom: 5px;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+.dotsContainer .dot{
+  width: 15px;
+  height: 15px;
+  margin: 0px 2px;
+  border: 3px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+.dotsContainer .active{
+  background-color: #555;
+}
+
+@keyframes next1{
+  from{
+    left: 0%
+  }
+  to{
+    left: -100%;
+  }
+}
+@keyframes next2{
+  from{
+    left: 100%
+  }
+  to{
+    left: 0%;
+  }
+}
+
+
+
+
+
+.button{
+  display: none;
+}
+
+.child-best-seller{
+  position: relative;
+}
+.child-best-seller:hover .button{
+  display: block;
+  position: absolute;
+  bottom:10%;
+  left: 50%;
 }
 
 .gift-card {
@@ -75,46 +366,59 @@
   align-items: center;
 }
 
-.carouse {
-  width: 95vw;
-  height: 95vh;
-  margin: 0 auto;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-#myCarousel {
-  border-radius: 40px;
-  overflow: hidden;
-}
-
-.carousel-item {
+.container{
+  width: 100%;
+  height: 100vh;
   position: relative;
-  height: 100%;
-}
-
-.carousel-caption {
-  position: absolute;
-  width: 100%;
-  top: 0;
-}
-
-.row {
-  width: 100%;
   display: flex;
   justify-content: center;
-  margin: 0;
+  align-items: center;
+}
+
+.container .slider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.container ul{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.container ul li{
+  list-style: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+.container ul li video{
+  width: 200px;
+  transition: all 0.3s;
+}
+.container ul li video:hover{
+  transform: scale(1.1);
+}
+
+video{
+  width: 100%;
+  height: 100%;
 }
 
 span {
   padding: 0 1em;
 }
 
-.row:nth-child(2) {
-  justify-content: center;
-}
 
 .header {
   position: relative;
@@ -127,11 +431,6 @@ span {
   align-items: center;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  z-index: 2;
-}
 
 .details {
   display: flex;
@@ -184,3 +483,4 @@ footer{
   font-family: var(--ff-nutino);
   padding: 0.5rem 0;
 }
+

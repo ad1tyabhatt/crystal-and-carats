@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  /* Background color */
+
+  --primary: #ebe9e1;
+  --secondary: #ff3300;
+  --tertiary: #fdae6d;
+  --quat: #d6236d;
+  --pent: #dd99eb;
+
+  --bg-brown: #8b0000;
+  --bg-dark-brown: #84292b;
+  --bg-grey: #d9d9d9;
+  --bg-pink: #d27f7f80;
+  --bg-darkpink: #d27f7f;
+  --bg-lightpink: #e0c4c4;
+  --bg-grey_light: #ffffff;
+
+  /* font family */
+
+  --ff-nutino: Nunito Sans;
+  --ff-poppins: Poppins;
+
+  /* font size */
+
+  --fs-16: 16px;
+  --fs-24: 24px;
+  --fs-32: 32px;
+  --fs-36: 36px;
+  --fs-40: 40px;
+  --fs-48: 48px;
+  --fs-60: 60px;
+  --fs-64: 64px;
+  --fs-96: 94px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+.img-container {
+  height: 80vh;
+  background-color: red;
+  background: url("../assets/img/shop/c2.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: var(--tertiary);
+  padding: 2rem;
+  width: 20%;
+  gap: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar h2 {
+  font-size: 1.8rem;
+}
+.category h3 {
+  font-size: 1.4rem;
+}
+
+.shop-container::-webkit-scrollbar {
+  width: 15px; /* width of the entire scrollbar */
+}
+
+.shop-container::-webkit-scrollbar-track {
+  background: var(--tertiary); /* color of the tracking area */
+}
+
+.shop-container::-webkit-scrollbar-thumb {
+  background-color: var(--secondary); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid var(--primary); /* creates padding around scroll thumb */
+}
+
+.shop-container {
+  overflow-y: scroll;
+  height: 150vh;
+  padding: 2rem;
+  padding-bottom: 0;
+  width: 80%;
+  background-color: var(--primary);
+}
+
+.shop-container h1 {
+  /* position: sticky; */
+  /* top: 1rem; */
+  text-align: center;
+  background-color: var(--tertiary);
+  font-size: var(--fs-36);
+}
+.cards {
+  padding: 2rem 0;
+  /* display: grid; */
+  display: flex;
+  /* grid-column: 1fr ; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #000;
+  gap: 4rem 5rem;
+}
+.card {
+  /* flex: 33.33%; */
+  /* flex-grow: 1;   */
+  /* width:25%; */
+  height: 280px;
+  width: 200px;
+  display: flex;
+  padding: 1.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.card > * {
+  min-width: fit-content;
+}
+.card p {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.card > img {
+  inline-size: 80%;
+  block-size: 80%;
+  /* height: 20vh; */
+  /* border: 2px dashed black; */
+  /* border-radius: 20px; */
+  overflow: hidden;
+  object-fit: cover;
+  /* width: 200px; */
+  /* height: 250px; */
+}
+
+.card button {
+  width: 100%;
+}
+.cards > *:hover {
+  filter: drop-shadow(4px 5px 18px var(--background-ter));
+  scale: 1.05;
+  transition: 0.3s;
+}
+
+.addtocart {
+  display: block;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  position: relative;
+  background: var(--secondary);
+  cursor: pointer;
+  height: 2em;
+  width: 7em;
+  overflow: hidden;
+  transition: transform 0.1s;
+  z-index: 1;
+}
+.addtocart:hover {
+  transform: scale(1.1);
+}
+.pretext {
+  color: black;
+  background: var(--secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+i {
+  margin-right: 10px;
+}
+.done {
+  background: greenyellow;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+
+  transform: translate(-110%) skew(-40deg);
+}
+.posttext {
+  background: greenyellow;
+}
+.fa-check {
+  background: greenyellow;
+}
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  gap: 30px;
+  justify-content: center;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--bg-grey);
+}
+.child {
+  width: 25%;
+}
+
+.child h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--bg-brown);
+  margin-bottom: 10px;
+}
+
+.brown {
+  color: var(--bg-brown);
+}
+
+.contact-us li i {
+  padding-right: 10px;
+}
+
+.details ul li {
+  padding-top: 0.2rem;
+}
+.details{
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-top: -25px;
+  /* position: absolute; */
+  /* bottom: 0; */
+}
+.socials > * {
+  padding-left: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--tertiary);
+  font-weight: 600;
+  font-family: var(--ff-nutino);
+  padding: 0.5rem 0;
+}
