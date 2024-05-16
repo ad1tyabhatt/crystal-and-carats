@@ -16,7 +16,14 @@
   --bg-lightpink: #e0c4c4;
   --bg-grey_light: #ffffff;
 
-  --background-image: radial-gradient(circle, #e59ebc, #f29aad, #fb989b, #fe9986, #fb9d70);
+  --background-image: radial-gradient(
+    circle,
+    #e59ebc,
+    #f29aad,
+    #fb989b,
+    #fe9986,
+    #fb9d70
+  );
 
   /* font family */
 
@@ -77,6 +84,19 @@ section {
 }
 .category h3 {
   font-size: 1.4rem;
+  font-weight: 500;
+}
+
+ul li a:hover {
+  /* background-color: var(--bg-grey_light); */
+  /* box-shadow: inset 100px 0 0 0 var(--bg-grey_light); */
+  /* transition: color .3s ease-in-out, box-shadow .3s ease-in-out; */
+  cursor: pointer;
+  font-weight: 500;
+}
+ul li:hover {
+  /* background-color: rgb(172, 168, 168); */
+  cursor: pointer;
   font-weight: 500;
 }
 
@@ -257,7 +277,7 @@ i {
 .details ul li {
   padding-top: 0.2rem;
 }
-.details{
+.details {
   font-weight: 500;
 }
 
