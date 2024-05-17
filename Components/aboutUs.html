@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./bestseller.css" />
     <link rel="stylesheet" href="../output.css" />
-    <link rel="stylesheet" href="./bridal-section.css">
-    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="./bridal-section.css" />
+    <link rel="stylesheet" href="./aboutUs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -37,25 +37,51 @@
         <a class=""><i class="grey fa-solid fa-user"></i></a>
       </nav>
     </header>
-    <section >
+    <section>
       <div class="sidebar">
         <ul class="sidebar-ul">
-            <a href="./help.html"><li><h3>Help & Info</h3></li></a>
-            <a href=""><li>About Us</li></a>
-            <a href="./career.html"><li>Careers</li></a>
-            <a href="./blog.html"><li>Blog</li></a>
-            <a href="./faq.html"><li>FAQs &nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></li></a>
+          <a href="./help.html"
+            ><li><h3>Help & Info</h3></li></a
+          >
+          <a href=""><li>About Us</li></a>
+          <a href="./career.html"><li>Careers</li></a>
+          <a href="./blog.html"><li>Blog</li></a>
+          <a href="./faq.html"
+            ><li>FAQs &nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></li
+          ></a>
         </ul>
       </div>
-      <div class="shop-container ">
-        <h1 class="fw-600" style="font-size: x-large; letter-spacing: 2px;">Welcome to 24X7 Help Centre of Crystals and Carats</h1>       
-          <h2>Crystal & Carats Jewelry > About Us</h2>
-          <p>Welcome to Crystal & Carats Jewelry, your source for beautiful and unique handcrafted jewelry pieces. Our passion for craftsmanship and dedication to quality have made us a leading name in the world of artisan jewelry.</p>
-          <h2>Crystal & Carats Jewelry > Our Mission</h2>
-          <p>Our mission is to create jewelry that not only enhances your style but also carries a story. We believe in the power of self-expression through accessories, and each piece in our collection is designed to resonate with your unique personality.</p>
-          <h2>Crystal & Carats Jewelry > Our Commitment to Sustainability</h2>
-          <p>Crystal & Carats Jewelry is committed to sustainable and ethical practices. We source our materials responsibly, prioritize fair labor practices, and strive to minimize our environmental impact. By choosing our jewelry, you are not only embracing beauty but also supporting a commitment to a better and more sustainable future.</p>
-          <p style="margin: 1rem 0;" class="fw-600">Thank you for choosing Crystal & Carats Jewelry. We look forward to being a part of your journey in expressing your individuality through our stunning creations</p>
+      <div class="shop-container">
+        <h1 class="fw-600" style="font-size: x-large; letter-spacing: 2px">
+          Welcome to 24X7 Help Centre of Crystals and Carats
+        </h1>
+        <h2>Crystal & Carats Jewelry > About Us</h2>
+        <p>
+          Welcome to Crystal & Carats Jewelry, your source for beautiful and
+          unique handcrafted jewelry pieces. Our passion for craftsmanship and
+          dedication to quality have made us a leading name in the world of
+          artisan jewelry.
+        </p>
+        <h2>Crystal & Carats Jewelry > Our Mission</h2>
+        <p>
+          Our mission is to create jewelry that not only enhances your style but
+          also carries a story. We believe in the power of self-expression
+          through accessories, and each piece in our collection is designed to
+          resonate with your unique personality.
+        </p>
+        <h2>Crystal & Carats Jewelry > Our Commitment to Sustainability</h2>
+        <p>
+          Crystal & Carats Jewelry is committed to sustainable and ethical
+          practices. We source our materials responsibly, prioritize fair labor
+          practices, and strive to minimize our environmental impact. By
+          choosing our jewelry, you are not only embracing beauty but also
+          supporting a commitment to a better and more sustainable future.
+        </p>
+        <p style="margin: 1rem 0" class="fw-600">
+          Thank you for choosing Crystal & Carats Jewelry. We look forward to
+          being a part of your journey in expressing your individuality through
+          our stunning creations
+        </p>
       </div>
     </section>
     <div class="details">
@@ -110,6 +136,9 @@
     <footer class="brown">@2023 Crystals & Carats. All Rights Reserved.</footer>
 
     <script>
+
+      // Add to cart
+
       const button = document.querySelector(".addtocart");
       const done = document.querySelector(".done");
       console.log(button);
@@ -123,9 +152,21 @@
           added = true;
         }
       });
-      window.addEventListener('scroll', () => {
-  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
+
+      // scroll Effect
+      
+      window.addEventListener(
+        "scroll",
+        () => {
+          document.body.style.setProperty(
+            "--scroll",
+            window.pageYOffset /
+              (document.body.offsetHeight - window.innerHeight)
+          );
+        },
+        false
+
+      );
     </script>
   </body>
 </html>
