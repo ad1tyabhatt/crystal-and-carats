@@ -608,8 +608,8 @@ video {
   grid-row-start: 2;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .flex {
@@ -881,6 +881,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-gray-600 {
+  --tw-shadow-color: #4b5563;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .drop-shadow-xl {

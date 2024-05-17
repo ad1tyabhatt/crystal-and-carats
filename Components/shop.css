@@ -174,7 +174,7 @@ ul li:hover {
   inline-size: 80%;
   block-size: 80%;
   /* height: 20vh; */
-  /* border: 2px dashed black; */
+  /* border: 1px dashed black; */
   /* border-radius: 20px; */
   overflow: hidden;
   object-fit: cover;

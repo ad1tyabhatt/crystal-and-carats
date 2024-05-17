@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bestseller.css" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="./bridal-section.css" />
+    <link rel="stylesheet" href="./aboutUs.css" />
+    <link rel="stylesheet" href="./faq.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="flex bg-primary justify-between px-10 h-[100px] items-center mb-0"
+    >
+      <nav class="text-fs_24 font-fw_bold space-x-8">
+        <a class="grey" href="../index.html">Home</a>
+        <a class="grey" href="./shop.html">Shop</a>
+        <a class="grey" href="#">Blog</a>
+      </nav>
+      <div class="logo">
+        <img src="../assets/img/Home/logo.png" class="h-12" alt="" />
+      </div>
+      <nav class="text-fs_24 font-fw_bold space-x-8 justify-between">
+        <a href=""><i class="grey fa-solid fa-heart"></i></a>
+        <a href=""><i class="grey fa-solid fa-cart-shopping"></i></a>
+        <a class=""><i class="grey fa-solid fa-user"></i></a>
+      </nav>
+    </header>
+    <section>
+      <div class="sidebar">
+        <ul class="sidebar-ul">
+          <li>
+            <a href="./help.html"><h3>Help & Info</h3></a>
+          </li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="./career.html">Careers</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li>
+            <a href=""
+              >FAQs &nbsp;&nbsp;<i
+                onclick="showHide()"
+                class="btn-dropdown fa-solid fa-angle-down"
+              ></i
+            ></a>
+          </li>
+          <div class="drop-down-container" id="drop-down-container">
+            <ul>
+              <li class="active"><a href="">Login & Account</a></li>
+              <li><a href="./faq-1.html">Refund & Pickup</a></li>
+              <li><a href="./faq-2.html">Delivery</a></li>
+              <li><a href="./faq-3.html">Cancellation</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <div class="shop-container">
+        <h1 class="fw-600" style="font-size: x-large; letter-spacing: 2px">
+          Welcome to 24X7 Help Centre of Crystals and Carats
+        </h1>
+        <h2>
+          Do I need to verify my mobile number or email address every time I log
+          in?
+        </h2>
+        <p>
+          As the verification step is a one time process, you won't have to do
+          it again once your account is verified.
+        </p>
+        <h2>What is an OTP or verification code?</h2>
+        <p>
+          To make sure that your account details are always secure, verification
+          by OTP (One Time Password) is important. This is a one-time process
+          and you can log into your account without any hassles once this is
+          done.
+        </p>
+        <h2>How can I change the password for my account?</h2>
+        <p>
+          To change the password for your account, follow these simple steps: <br> 1.
+          Log in to your account <br>2. Go to My Account › Settings › Change
+          Password <br>3. Enter your old password <br>4. Enter your new password 5.
+          Choose 'Save Changes'
+        </p>
+      </div>
+    </section>
+    <div class="details">
+      <div class="child address">
+        <div class="child-1">
+          <h3>Address</h3>
+          <p>
+            Crystals & Carats Plot No 44, 45, Street Number 14, Marol MIDC
+            Industry Estate, Andheri East,Mumbai -400093
+          </p>
+        </div>
+        <div class="child-2"></div>
+      </div>
+      <div class="child address">
+        <h3>Help & Info</h3>
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+      <div class="child address">
+        <h3>Contact Us</h3>
+        <ul class="contact-us">
+          <li><i class="fa-solid fa-phone"></i>1809-908-5647</li>
+          <li><i class="fa-solid fa-envelope"></i>Get in Touch</li>
+          <li><i class="fa-brands fa-rocketchat"></i>Chat With Us</li>
+        </ul>
+      </div>
+      <div class="child address">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Payment Issues</li>
+          <li>Net Banking</li>
+          <li>Custom Jewellery</li>
+        </ul>
+      </div>
+      <div class="child">
+        <h3>Location</h3>
+        <img src="../assets/img/Home/location.png" alt="" />
+      </div>
+    </div>
+    <div class="socials">
+      <span class="brown"> Follow Us on : </span
+      ><i class="fa-brands fa-facebook"></i
+      ><i class="fa-brands fa-instagram"></i
+      ><i class="fa-brands fa-whatsapp"></i><i class="fa-brands fa-twitter"></i>
+    </div>
+    <footer class="brown">@2023 Crystals & Carats. All Rights Reserved.</footer>
+
+    <script>
+      //       const button = document.querySelector(".addtocart");
+      //       const done = document.querySelector(".done");
+      //       console.log(button);
+      //       let added = false;
+      //       button.addEventListener("click", () => {
+      //         if (added) {
+      //           done.style.transform = "translate(-110%) skew(-40deg)";
+      //           added = false;
+      //         } else {
+      //           done.style.transform = "translate(0px)";
+      //           added = true;
+      //         }
+      //       });
+      //       window.addEventListener('scroll', () => {
+      //   document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+      // }, false);
+
+      //! Drop down menu
+
+      let dropDown = document.querySelector(".drop-down-container");
+      function showHide(e) {
+        dropDown.classList.toggle("hide");
+        dropDown.style.background = "red";
+      }
+    </script>
+  </body>
+</html>
