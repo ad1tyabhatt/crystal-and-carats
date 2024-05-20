@@ -60,14 +60,14 @@
         <div class="category">
           <h4><i class="fa-solid fa-user-check"></i>Account Settings</h4>
           <ul>
-            <li><a href="" class="active" style="color: brown;">Profile Information</a></li>
-            <li><a href="">Manage Address</a></li>
+            <li><a href="" class="active">Profile Information</a></li>
+            <li><a href="" >Manage Address</a></li>
           </ul>
         </div>
         <div class="category">
           <h4><i class="fa-solid fa-credit-card"></i>Payments</h4>
           <ul>
-            <li><a href="" class="">Saved Information</a></li>
+            <li><a href="" style="color: brown" class="">Saved Information</a></li>
             <li><a href="" class="">Saved UPIs</a></li>
             <li><a href="">Gift Card</a></li>
           </ul>
@@ -111,65 +111,51 @@
         
       </form> -->
       <div class="container">
-        <div class="title">PERSONAL INFORMATION</div>
+        <div class="title">Payment Methods</div>
         <div class="content">
           <form action="#">
+            <div class="button">
+              <input type="submit" value="+ Add a new card" />
+            </div>
             <div class="user-detail">
-              <div class="input-box">
-                <span class="detail">Full Name</span>
-                <input type="text" placeholder="Enter your name" required>
-              </div>
-              <div class="input-box">
-                <span class="detail">Username</span>
-                <input type="text" placeholder="Enter your username" required>
-              </div>
-              <div class="input-box">
-                <span class="detail">Email</span>
-                <input type="text" placeholder="Enter your email" required>
-              </div>
-              <div class="input-box">
-                <span class="detail">Phone Number</span>
-                <input type="text" placeholder="Enter your number" required>
-              </div>
-
-
+                <div class="input-box">
+                    <span class="detail">DEBIT CARD</span>
+                    <input type="text" placeholder="Enter your Debit card Number" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="detail">CREDIT CARD</span>
+                    <input type="text" placeholder="Enter your Credit card number" required>
+                  </div>
               <!-- !password -->
               <!-- <div class="input-box">
                 <span class="detail">Password</span>
                 <input type="text" placeholder="Enter your password" required>
               </div> -->
-    
+
               <!-- <div class="input-box">
                 <span class="detail">Confirm Password</span>
                 <input type="text" placeholder="Confirm your password" required>
               </div> -->
             </div>
             <div class="gender-detail">
-              <input type="radio" name="gender" id="dot-1">
-              <input type="radio" name="gender" id="dot-2">
-              <input type="radio" name="gender" id="dot-3">
-              <span class="gender-title">Gender</span>
+              <input type="radio" name="gender" id="dot-1" />
+              <input type="radio" name="gender" id="dot-2" />
+              <input type="radio" name="gender" id="dot-3" />
+              <span class="gender-title">Delivery Type</span>
               <div class="category">
                 <label for="dot-1">
-                <span class="dot one"></span>
-                <span class="gender">Male</span>
-              </label>
-              <label for="dot-2">
-                <span class="dot two"></span>
-                <span class="gender">Female</span>
-              </label>
-              <label for="dot-3">
-                <span class="dot three"></span>
-                <span class="gender">Prefer not to say</span>
+                  <span class="dot one"></span>
+                  <span class="gender">7-Days Delivery</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">5-Days Delivery</span>
                 </label>
               </div>
             </div>
-            <div class="declaration" style="padding: 10px 0;">
-                <input style="margin-right: 10px;" type="checkbox" name="" id="">I hereby declare that all the above details are correct.
-            </div>
             <div class="button">
-              <input type="submit" value="Register">
-            </div>
+                <input type="submit" value="Save">
+              </div>
           </form>
         </div>
       </div>

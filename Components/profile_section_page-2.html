@@ -60,8 +60,8 @@
         <div class="category">
           <h4><i class="fa-solid fa-user-check"></i>Account Settings</h4>
           <ul>
-            <li><a href="" class="active" style="color: brown;">Profile Information</a></li>
-            <li><a href="">Manage Address</a></li>
+            <li><a href="" class="active">Profile Information</a></li>
+            <li><a href="" style="color: brown">Manage Address</a></li>
           </ul>
         </div>
         <div class="category">
@@ -111,64 +111,58 @@
         
       </form> -->
       <div class="container">
-        <div class="title">PERSONAL INFORMATION</div>
+        <div class="title">MANAGE ADDRESS</div>
         <div class="content">
           <form action="#">
+            <div class="button">
+              <input type="submit" value="+ Add New Address" />
+            </div>
             <div class="user-detail">
-              <div class="input-box">
-                <span class="detail">Full Name</span>
-                <input type="text" placeholder="Enter your name" required>
+              <div class="box-container" style="display: flex; flex-direction: column; gap: 30px; ">
+                <div class="box" style="border: 2px solid brown; border-radius: 5px; padding: 10px;">
+                  <p>Aditya Bhatt<span>&nbsp;9876543210</span></p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate voluptates sint sed dignissimos iure dolorem est,
+                    alias dolor ea in!
+                  </p>
+                </div>
+                <div class="box" style="border: 2px solid brown; border-radius: 5px; padding: 10px;">
+                    <p>Aditya Bhatt<span> &nbsp;9876543210</span></p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptate voluptates sint sed dignissimos iure dolorem est,
+                      alias dolor ea in!
+                    </p>
+                  </div>
               </div>
-              <div class="input-box">
-                <span class="detail">Username</span>
-                <input type="text" placeholder="Enter your username" required>
-              </div>
-              <div class="input-box">
-                <span class="detail">Email</span>
-                <input type="text" placeholder="Enter your email" required>
-              </div>
-              <div class="input-box">
-                <span class="detail">Phone Number</span>
-                <input type="text" placeholder="Enter your number" required>
-              </div>
-
 
               <!-- !password -->
               <!-- <div class="input-box">
                 <span class="detail">Password</span>
                 <input type="text" placeholder="Enter your password" required>
               </div> -->
-    
+
               <!-- <div class="input-box">
                 <span class="detail">Confirm Password</span>
                 <input type="text" placeholder="Confirm your password" required>
               </div> -->
             </div>
             <div class="gender-detail">
-              <input type="radio" name="gender" id="dot-1">
-              <input type="radio" name="gender" id="dot-2">
-              <input type="radio" name="gender" id="dot-3">
-              <span class="gender-title">Gender</span>
+              <input type="radio" name="gender" id="dot-1" />
+              <input type="radio" name="gender" id="dot-2" />
+              <input type="radio" name="gender" id="dot-3" />
+              <span class="gender-title">Delivery Type</span>
               <div class="category">
                 <label for="dot-1">
-                <span class="dot one"></span>
-                <span class="gender">Male</span>
-              </label>
-              <label for="dot-2">
-                <span class="dot two"></span>
-                <span class="gender">Female</span>
-              </label>
-              <label for="dot-3">
-                <span class="dot three"></span>
-                <span class="gender">Prefer not to say</span>
+                  <span class="dot one"></span>
+                  <span class="gender">7-Days Delivery</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">5-Days Delivery</span>
                 </label>
               </div>
-            </div>
-            <div class="declaration" style="padding: 10px 0;">
-                <input style="margin-right: 10px;" type="checkbox" name="" id="">I hereby declare that all the above details are correct.
-            </div>
-            <div class="button">
-              <input type="submit" value="Register">
             </div>
           </form>
         </div>
