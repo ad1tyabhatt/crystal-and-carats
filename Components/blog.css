@@ -1,0 +1,144 @@
+:root {
+  /* Background color */
+
+  --primary: #ebe9e1;
+  --secondary: #ff3300;
+  --tertiary: #fdae6d;
+  --quat: #d6236d;
+  --pent: #dd99eb;
+
+  --primary: #fed7ba;
+  --bg-brown: #8b0000;
+  --bg-dark-brown: #84292b;
+  --bg-grey: #d9d9d9;
+  --bg-pink: #d27f7f80;
+  --bg-darkpink: #d27f7f;
+  --bg-lightpink: #e0c4c4;
+
+  --bg-brown: #8b0000;
+  --bg-dark-brown: #84292b;
+  --bg-grey: #d9d9d9;
+  --bg-pink: #d27f7f80;
+  --bg-darkpink: #d27f7f;
+  --bg-lightpink: #e0c4c4;
+  --bg-grey_light: #ffffff;
+
+  --background-image: radial-gradient(
+    circle,
+    #e59ebc,
+    #f29aad,
+    #fb989b,
+    #fe9986,
+    #fb9d70
+  );
+
+  /* font family */
+
+  --ff-nutino: Nunito Sans;
+  --ff-poppins: Poppins;
+
+  /* font size */
+
+  --fs-16: 16px;
+  --fs-24: 24px;
+  --fs-32: 32px;
+  --fs-36: 36px;
+  --fs-40: 40px;
+  --fs-48: 48px;
+  --fs-60: 60px;
+  --fs-64: 64px;
+  --fs-96: 94px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+.img-container {
+  height: 100vh;
+  background: url("../assets/img/blog/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-section{
+    padding:2rem;
+}
+.blog-section >*{
+    margin-top: 1.2rem;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+  padding:50px 0;
+  /* margin-bottom: 50px; */
+  /* padding: 2rem 0; */
+}
+.blog {
+  background-color: var(--bg-grey_light);
+  width: 20vw;
+  height: 20vw;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.blog p{
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.blog img {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  object-fit: cover;
+}
+h2 {
+  font-size: var(--fs-32);
+  color: black;
+}
+
+p {
+  color: #8b0000;
+}
+.blog-content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    min-width: 50%;
+    min-height: 60vh;
+    background: url('../assets/img/blog/banner-2.png');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right{
+    padding: 3rem;
+    font-size: large;
+    background: var(--bg-grey_light);
+}
+.right p{
+    margin: 1rem 0;
+}
+
+.bold{
+    font-weight: 600;
+}
+.black{
+    color: black;
+}
+.larger{
+    font-size: larger;
+}
+
+
