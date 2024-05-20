@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./shop.css" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="./coin.css" />
+    <link rel="stylesheet" href="./admin_panel_crystal.css" />
+    <link rel="stylesheet" href="./admin_panel_carat.css">
+    <link rel="stylesheet" href="./gift.css">
+    <link rel="stylesheet" href="./men.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="flex bg-primary justify-between px-10 h-[100px] items-center mb-0"
+    >
+      <nav class="text-fs_24 font-fw_bold space-x-8">
+        <a class="grey" href="../index.html">Home</a>
+        <a class="grey" href="./shop.html">Shop</a>
+        <a class="grey" href="./blog.html">Blog</a>
+      </nav>
+      <div class="logo">
+        <img src="../assets/img/Home/logo.png" class="h-12" alt="" />
+      </div>
+      <nav class="text-fs_24 font-fw_bold space-x-8 justify-between">
+        <a href=""><i class="grey fa-solid fa-heart"></i></a>
+        <a href=""><i class="grey fa-solid fa-cart-shopping"></i></a>
+        <a class=""><i class="grey fa-solid fa-user"></i></a>
+      </nav>
+    </header>
+    <div class="img-container"></div>
+
+    <!-- !------------Gift Container-------------- -->
+
+    <div class="gifts">
+        <div class="gift">
+            <img src="../assets/img/gift/dad.png" alt="">
+            <p>Gift for Dad</p>
+        </div>
+        <div class="gift">
+            <img src="../assets/img/gift/mom.png" alt="">
+            <p>Gift for Mom</p>
+        </div>
+        <div class="gift">
+            <img src="../assets/img/gift/sister.png" alt="">
+            <p>Gift for Sister</p>
+        </div>
+        <div class="gift">
+            <img src="../assets/img/gift/wife.png" alt="">
+            <p>Gift for Wife</p>
+        </div>
+        <div class="gift">
+            <img src="../assets/img/gift/aunt.png" alt="">
+            <p>Gift for Aunt</p>
+        </div>
+        <div class="gift">
+            <img src="../assets/img/gift/kid.png" alt="">
+            <p>Gift for Kid</p>
+        </div>
+        <div class="gift">
+            <img src="../assets/img/gift/kids.jfif" alt="">
+            <p>Gift for Kids</p>
+        </div>
+        <div class="gift">
+            <img src="../assets/img/gift/dad.png" alt="">
+            <p>Gift for dad</p>
+        </div>
+    </div>
+<div class="gift-banner"></div>
+    <div class="details">
+      <div class="child address">
+        <div class="child-1">
+          <h3>Address</h3>
+          <p>
+            Crystals & Carats Plot No 44, 45, Street Number 14, Marol MIDC
+            Industry Estate, Andheri East,Mumbai -400093
+          </p>
+        </div>
+        <div class="child-2"></div>
+      </div>
+      <div class="child address">
+        <h3>Help & Info</h3>
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+      <div class="child address">
+        <h3>Contact Us</h3>
+        <ul class="contact-us">
+          <li><i class="fa-solid fa-phone"></i>1809-908-5647</li>
+          <li><i class="fa-solid fa-envelope"></i>Get in Touch</li>
+          <li><i class="fa-brands fa-rocketchat"></i>Chat With Us</li>
+        </ul>
+      </div>
+      <div class="child address">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Payment Issues</li>
+          <li>Net Banking</li>
+          <li>Custom Jewellery</li>
+        </ul>
+      </div>
+      <div class="child">
+        <h3>Location</h3>
+        <img src="../assets/img/Home/location.png" alt="" />
+      </div>
+    </div>
+    <div class="socials">
+      <span class="brown"> Follow Us on : </span
+      ><i class="fa-brands fa-facebook"></i
+      ><i class="fa-brands fa-instagram"></i
+      ><i class="fa-brands fa-whatsapp"></i><i class="fa-brands fa-twitter"></i>
+    </div>
+    <footer class="brown">@2023 Crystals & Carats. All Rights Reserved.</footer>
+
+    <script>
+      const button = document.querySelector(".addtocart");
+      const done = document.querySelector(".done");
+      console.log(button);
+      let added = false;
+      button.addEventListener("click", () => {
+        if (added) {
+          done.style.transform = "translate(-110%) skew(-40deg)";
+          added = false;
+        } else {
+          done.style.transform = "translate(0px)";
+          added = true;
+        }
+      });
+    </script>
+  </body>
+</html>
