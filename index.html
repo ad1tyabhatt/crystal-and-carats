@@ -53,13 +53,13 @@
       <div class="signup-right">
         <div class="nav-container">
           <ul>
-            <li><a class="btn-signup">Sign Up</a></li>
-            <li><a href="" class="btn-login">Login</a></li>
+            <li><a class="btn-signup" id="signUp-btn">Sign Up</a></li>
+            <li><a href="" class="btn-signup" id="signIn-btn">Login</a></li>
           </ul>
           <i class="fa-solid fa-square-xmark fa-l close-btn"></i>
         </div>
-        <p>Sign up & get Rs. 500 off* coupon code for your first purchase!</p>
-        <form>
+        <p id="sign-up-message">Sign up & get Rs. 500 off* coupon code for your first purchase!</p>
+        <form id="form">
           <input type="text" name="name" id="" placeholder="Name" />
           <div class="">
             <input type="email" name="email" id="" placeholder="Email ID" />
@@ -79,8 +79,44 @@
             Already have an account? <a class="login-now" href="">Login now</a>
           </p>
         </form>
+        <form id="signInForm">
+          <input style="margin: 10px 0;" type="text" name="name"  placeholder="Name" />
+          <input style="margin: 10px 0;" type="password" name="Password"  placeholder="Password" />
+          <button style="margin: 10px 0;" class="btn-signup" role="button">Sign In</button>
+          <a id="forgotPassBtn" style="font-size: 10px;" href="">Forgot Password</a>
+          <button style="margin: 10px 0;" class="btn-signup" id="google" role="button"><i class="fa-brands fa-google"></i> &nbsp;Login with google</button>
+          <p style="font-size: 12px;">new user? <a href="" id="signUp-btn" style="color: brown;">signup now!!!</a></p>
+        </form>
+
+        <form id="forget-password-container">
+          <input type="password" name="Password" id="" placeholder="Enter your email Id or Phone Number" />
+          <button id="reset-password-btn" style="margin: 10px 0;" class="btn-signup" role="button">Reset Password</button>
+          <a style="color: white;" id="signIn-btn" href=""><i class="fa-solid fa-arrow-left"></i>back to login</a>
+        </form>
+
+        <form action="" id="reset-password">
+          <h2 style="color: brown;">Enter OTP</h2>
+          <div class="otp-container" style="margin-top:30px;display:flex; flex-direction: row; gap: 20px;">
+            <div style="height: 30px; border: 1px solid brown; width: 80px; background-color: white;" class="otp"></div>
+            <div style="height: 30px; border: 1px solid brown; width: 80px; background-color: white;" class="otp"></div>
+            <div style="height: 30px; border: 1px solid brown; width: 80px; background-color: white;" class="otp"></div>
+            <div style="height: 30px; border: 1px solid brown; width: 80px; background-color: white;" class="otp"></div>
+          </div>
+          <button class="btn-signup" style="margin-top:30px" id="reset-password-confirm">Contine</button>
+        </form>
+        
+        <form id="enter-new-password-container">
+          <input type="password" name="Password" placeholder="Enter your New Password" />
+          <input type="password" name="Password" placeholder="Re-enter your New Password" />
+          <button  style="margin: 10px 0;" class="btn-signup" role="button">Reset Password</button>
+          <a style="color: white;" id="signIn-btn" href=""><i class="fa-solid fa-arrow-left"></i>Contine</a>
+        </form>
+
       </div>
     </div>
+
+
+<!-- !!!!!!!!!!!!!!!!!!!!signIn!!!!!!!!!!!!!! -->
 
     <!-- 
       !--------------Carousel ------------------->

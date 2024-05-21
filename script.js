@@ -1,4 +1,6 @@
 
+
+
 const signUp = document.querySelector(".signUp");
 const closeBtn = document.querySelector(".close-btn");
 setTimeout(function () {
@@ -9,6 +11,56 @@ closeBtn.addEventListener("click", (e) => {
   console.log("close btn");
   signUp.style.display = "none";
 });
+
+const signUpBtn = document.getElementById('signUp-btn')
+const signInBtn = document.getElementById('signIn-btn')
+const getForm = document.getElementById('form');
+const signUpMsg = document.getElementById('sign-up-message')
+const getSignInForm = document.getElementById('signInForm'); 
+const getForgetPasswordContainer = document.getElementById('forget-password-container')
+const getForgotPassBtn = document.getElementById('forgotPassBtn')
+const resetPassContainer = document.getElementById('reset-password')
+const getResetPassbtn = document.getElementById('reset-password-btn')
+const getNewPassCont = document.getElementById('enter-new-password-container')
+const getNewPassBtn = document.getElementById('reset-password-confirm')
+
+signInBtn.addEventListener('click',(e)=>{
+  e.preventDefault()
+  getForm.style.display= 'none';
+  signUpMsg.style.display= 'none';
+  getSignInForm.style.display='block'
+  getForgetPasswordContainer.style.display = 'none'
+  getNewPassCont.style.display = 'none'
+})
+
+signUpBtn.addEventListener('click',(e)=>{
+  e.preventDefault()
+  getForm.style.display = 'block'
+  signUpMsg.style.display = 'block'
+  getSignInForm.style.display = 'none'
+  getNewPassCont.style.display = 'none'
+})
+
+getForgotPassBtn.addEventListener('click',(e)=>{
+  e.preventDefault()
+  getForgetPasswordContainer.style.display='block'
+  getSignInForm.style.display = 'none'
+  getNewPassCont.style.display = 'none'
+})
+
+getResetPassbtn.addEventListener('click',(e)=>{
+  e.preventDefault()
+  getSignInForm.style.display = 'none';
+  resetPassContainer.style.display = 'block'
+  getForgetPasswordContainer.style.display='none'
+  getNewPassCont.style.display = 'none'
+})
+
+getNewPassBtn.addEventListener('click',(e)=>{
+  e.preventDefault()
+  resetPassContainer.style.display = 'none'
+  getNewPassCont.style.display='block'
+})
 
 	// Access the Images
 	let slideImages = document.querySelectorAll('.slide-image');

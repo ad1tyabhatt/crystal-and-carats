@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./shop.css" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="./coin.css" />
+    <link rel="stylesheet" href="./profile_section_main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .shop-container {
+        background-color: #ffffff;
+      }
+      .coupons {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        padding-top: 2rem;
+        gap: 1.5rem 0;
+      }
+      .coupon {
+        padding: 0.5rem 1rem;
+        box-shadow: rgba(248, 52, 52, 0.836) 0px 2px 5px -1px,
+          rgba(255, 98, 98, 0.571) 0px 1px 3px -1px;
+        border-radius: 2px solid brown;
+      }
+      .upper-coupon {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 1cm;
+        font-weight: 600;
+        color: rgb(126, 9, 9);
+      }
+      .coupon p {
+        font-style: italic;
+        font-size: 0.9rem;
+      }
+
+      .button-75 {
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+        border: 0;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        font-family: "Codec cold", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        height: 54px;
+        justify-content: center;
+        letter-spacing: 0.4px;
+        line-height: 1;
+        max-width: 20%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 3px;
+        text-decoration: none;
+        text-transform: uppercase;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-75:active {
+        outline: 0;
+      }
+
+      .button-75:hover {
+        outline: 0;
+      }
+
+      .button-75 span {
+        transition: all 200ms;
+      }
+
+      .button-75:hover span {
+        transform: scale(0.9);
+        opacity: 0.75;
+      }
+      .review-container {
+        padding: 1rem 4rem;
+      }
+      .review-container h1 {
+        font-size: x-large;
+        text-align: center;
+      }
+      .reviews {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 2rem 0;
+      }
+
+      .review {
+        display: flex;
+        height: 200px;
+        flex-direction: row;
+        background-color: #ffffff;
+        gap: 0 20px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+          rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        /* width: 600px; */
+        border-radius: 10px;
+      }
+      .green {
+        background-color: rgb(46, 255, 46);
+        padding: 4px;
+        border-radius: 10px;
+      }
+      .orange {
+        background-color: rgb(251, 109, 0);
+        padding: 4px;
+        border-radius: 10px;
+      }
+      .small {
+        font-size: small;
+      }
+      .large {
+        font-size: large;
+      }
+      /* .grey {
+        color: gray;
+      } */
+      .bold {
+        font-weight: 600;
+      }
+      .right-review > * {
+        margin-top: 22px;
+      }
+      .review-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .left-review {
+        width: 30%;
+        height: 100%;
+      }
+      .left-review img {
+        inline-size: 100%;
+        block-size: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        object-position: center;
+      }
+      .notification-container {
+        padding: 1rem 2rem;
+        width: 100%;
+        background-color: #ffffff;
+      }
+
+      .notification {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .notifications > * {
+        margin-top: 20px;
+      }
+      .notifications h2 {
+        color: brown;
+        font-size: 1.4rem;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="flex bg-primary justify-between px-10 h-[100px] items-center mb-0"
+    >
+      <nav class="text-fs_24 font-fw_bold space-x-8">
+        <a class="grey" href="../index.html">Home</a>
+        <a class="grey" href="./shop.html">Shop</a>
+        <a class="grey" href="#">Blog</a>
+      </nav>
+      <div class="logo">
+        <img src="../assets/img/Home/logo.png" class="h-12" alt="" />
+      </div>
+      <nav class="text-fs_24 font-fw_bold space-x-8 justify-between">
+        <a href=""><i class="grey fa-solid fa-heart"></i></a>
+        <a href=""><i class="grey fa-solid fa-cart-shopping"></i></a>
+        <a class=""><i class="grey fa-solid fa-user"></i></a>
+      </nav>
+    </header>
+    <section>
+      <div class="sidebar">
+        <div
+          style="background-color: white; border-radius: 10px; padding: 0.5rem"
+          class="category profile-logo-container"
+        >
+          <i class="fa-solid fa-circle-user"></i>
+          <p>
+            <span style="font-size: 14px">Hello,</span><br /><span
+              style="font-weight: 600"
+              >Aditya Bhatt</span
+            >
+          </p>
+        </div>
+        <div class="category">
+          <h4>
+            <i class="fa-solid fa-bag-shopping"></i><span>My Orders</span
+            ><i class="fa-solid fa-angle-right"></i>
+          </h4>
+        </div>
+        <div class="category">
+          <h4><i class="fa-solid fa-user-check"></i>Account Settings</h4>
+          <ul>
+            <li><a href="" class="active">Profile Information</a></li>
+            <li><a href="">Manage Address</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4><i class="fa-solid fa-credit-card"></i>Payments</h4>
+          <ul>
+            <li><a href="" class="">Saved Information</a></li>
+            <li><a href="" class="">Saved UPIs</a></li>
+            <li><a href="">Gift Card</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4><i class="fa-solid fa-heart"></i>My Stuff</h4>
+          <ul>
+            <li><a href="" class="">My Wishlist</a></li>
+            <li><a href="" class="">My Coupons</a></li>
+            <li><a href="">My Reviews</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4><i class="fa-solid fa-gear"></i>Settings</h4>
+          <ul>
+            <li><a href="" class="" style="color: brown">Notifications</a></li>
+            <li><a href="" class="">KYC</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4><i class="fa-solid fa-power-off"></i>Logout</h4>
+        </div>
+      </div>
+      <div class="notification-container">
+        <h1 class="bold" style="font-size: 2rem">Notification Preferences</h1>
+        <div class="notification-main-container">
+          <div class="notifications">
+            <h2>Desktop Notifications</h2>
+            <div class="notification">
+              <div>
+                <input type="checkbox" id="scales" name="scales" checked />
+                <label for="scales">My Orders</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="horns" name="horns" />
+                <label for="horns">Reminder for Cart & Wishlist</label>
+              </div>
+              <div>
+                <input type="checkbox" id="horns" name="horns" />
+                <label for="horns">New Offers</label>
+              </div>
+            </div>
+          </div>
+          <div class="notifications">
+            <h2>In-App Notifications</h2>
+            <div class="notification">
+              <div class="noti">
+                <input type="checkbox" id="scales" name="scales" checked />
+                <label for="scales">My Orders</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="horns" name="horns" />
+                <label for="horns">Reminder for Cart & Wishlist</label>
+              </div>
+              <div>
+                <input type="checkbox" id="horns" name="horns" />
+                <label for="horns">New Offers</label>
+              </div>
+            </div>
+          </div>
+          <div class="notifications">
+            <h2>Email Notifications</h2>
+            <div class="notification">
+              <div>
+                <input type="checkbox" id="scales" name="scales" checked />
+                <label for="scales">My Orders</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="horns" name="horns" />
+                <label for="horns">Reminder for Cart & Wishlist</label>
+              </div>
+              <div>
+                <input type="checkbox" id="horns" name="horns" />
+                <label for="horns">New Offers</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="details">
+      <div class="child address">
+        <div class="child-1">
+          <h3>Address</h3>
+          <p>
+            Crystals & Carats Plot No 44, 45, Street Number 14, Marol MIDC
+            Industry Estate, Andheri East,Mumbai -400093
+          </p>
+        </div>
+        <div class="child-2"></div>
+      </div>
+      <div class="child address">
+        <h3>Help & Info</h3>
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+      <div class="child address">
+        <h3>Contact Us</h3>
+        <ul class="contact-us">
+          <li><i class="fa-solid fa-phone"></i>1809-908-5647</li>
+          <li><i class="fa-solid fa-envelope"></i>Get in Touch</li>
+          <li><i class="fa-brands fa-rocketchat"></i>Chat With Us</li>
+        </ul>
+      </div>
+      <div class="child address">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Payment Issues</li>
+          <li>Net Banking</li>
+          <li>Custom Jewellery</li>
+        </ul>
+      </div>
+      <div class="child">
+        <h3>Location</h3>
+        <img src="../assets/img/Home/location.png" alt="" />
+      </div>
+    </div>
+    <div class="socials">
+      <span class="brown"> Follow Us on : </span
+      ><i class="fa-brands fa-facebook"></i
+      ><i class="fa-brands fa-instagram"></i
+      ><i class="fa-brands fa-whatsapp"></i><i class="fa-brands fa-twitter"></i>
+    </div>
+    <footer class="brown">@2023 Crystals & Carats. All Rights Reserved.</footer>
+
+    <script>
+      const button = document.querySelector(".addtocart");
+      const done = document.querySelector(".done");
+      console.log(button);
+      let added = false;
+      button.addEventListener("click", () => {
+        if (added) {
+          done.style.transform = "translate(-110%) skew(-40deg)";
+          added = false;
+        } else {
+          done.style.transform = "translate(0px)";
+          added = true;
+        }
+      });
+    </script>
+  </body>
+</html>

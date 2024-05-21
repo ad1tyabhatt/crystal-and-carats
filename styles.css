@@ -151,6 +151,7 @@ form input:hover{
   text-align: start;
 }
 
+
 /* CSS */
 .btn-signup {
   --b: 3px;   /* border thickness */
@@ -187,6 +188,12 @@ width: 100%;
   background: var(--color);
   color: #fff;
 }
+
+
+#signInForm,#forget-password-container,#reset-password,#enter-new-password-container{
+  display: none;
+}
+
 
 .grey:hover{
   color: rgb(255, 0, 0);
