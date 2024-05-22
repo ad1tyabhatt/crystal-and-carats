@@ -492,3 +492,8 @@ footer{
   padding: 0.5rem 0;
 }
 
+@media screen and (max-width:480px){
+  header .logo{
+    display: hidden;
+  }
+}
