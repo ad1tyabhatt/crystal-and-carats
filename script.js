@@ -1,4 +1,13 @@
+//sidebar
+function showSidebar(){
+  const showSide = document.querySelector('.left-nav-hidden')
+  showSide.style.display = 'flex';
+}
 
+function hideSidebar(){
+  const hideSidebar = document.querySelector('.left-nav-hidden')
+  hideSidebar.style.display='none'
+}
 
 
 const signUp = document.querySelector(".signUp");
@@ -11,6 +20,12 @@ closeBtn.addEventListener("click", (e) => {
   console.log("close btn");
   signUp.style.display = "none";
 });
+
+window.onkeydown = function( event ) {
+  if ( event.keyCode == 27 ) {
+    signUp.style.display = "none";
+  }
+};
 
 const signUpBtn = document.getElementById('signUp-btn')
 const signInBtn = document.getElementById('signIn-btn')
