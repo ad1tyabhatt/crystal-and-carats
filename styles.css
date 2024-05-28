@@ -586,6 +586,14 @@ span.prev:hover {
   .category-container {
     flex-direction: column;
   }
+
+    .browser-category h2{
+      font-size: var(--fs-32);
+    }
+    .browser-category p{
+      font-size: var(--fs-24);
+    }
+
   .carat,
   .crystal {
     width: 30vw;
@@ -727,6 +735,9 @@ span.prev:hover {
 .shop-by-gender > * {
   margin-bottom: 0.8rem;
 }
+.shop-by-gender .line-div img{
+  width: 100%;
+}
 
 .gender-grid {
   display: flex;
@@ -831,7 +842,7 @@ span.prev:hover {
 }
 
 .container ul li video {
-  width: 200px;
+  width: 80%;
   transition: all 0.3s;
 }
 .container ul li video:hover {
@@ -922,6 +933,12 @@ span {
 
 .child {
   width: 25%;
+}
+.location img{
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 .child h3 {
